@@ -1,0 +1,15 @@
+{
+  "name": "downloads_audit",
+  "description": "Analyzes your Downloads folder, finds the biggest space hogs, and suggests what is safe to delete.",
+  "enabled": false,
+  "triggers": [
+    "audit downloads",
+    "clean up downloads",
+    "free up disk space",
+    "what can i delete"
+  ],
+  "prompt": "You are running JARVIS downloads audit. Use run_command with a read-only PowerShell command like 'Get-ChildItem $env:USERPROFILE\\Downloads | Sort-Object Length -Descending | Select-Object -First 15 Name,@{n=\"MB\";e={[math]::Round($_.Length/1MB,1)}} | Format-Table -AutoSize' to find the largest files. Identify obvious safe-to-delete items (old installers .exe/.msi, duplicates, .zip archives, temp files). Present the top space hogs with sizes and ask before deleting anything. NEVER delete without explicit confirmation.",
+  "steps": [],
+  "script": "",
+  "persist": false
+}

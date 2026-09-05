@@ -1,0 +1,21 @@
+{
+  "name": "deep_focus",
+  "description": "Deep-focus mode: silences interruptions, lists what to focus on, and guides blocking distractions.",
+  "enabled": true,
+  "persist": true,
+  "triggers": [
+    "deep focus",
+    "focus mode",
+    "do not disturb",
+    "i need to focus",
+    "help me focus"
+  ],
+  "prompt": "The user has entered deep-focus mode. Keep replies short and on-task. If they try to switch to distracting apps or sites (social media, video, news), gently remind them of their active focus task and offer the focus_tasks list instead. Avoid initiating chats, media, or entertainment.",
+  "steps": [
+    {
+      "tool": "focus_tasks",
+      "values": {}
+    }
+  ],
+  "script": ""
+}

@@ -1,0 +1,15 @@
+{
+  "name": "report_writer",
+  "description": "Writes a timestamped markdown report file about whatever topic you name and returns its saved path.",
+  "enabled": true,
+  "triggers": [
+    "write a report",
+    "make a report",
+    "save the report",
+    "create report file"
+  ],
+  "prompt": "",
+  "steps": [],
+  "script": "skills/scripts/report_writer.py",
+  "persist": false
+}

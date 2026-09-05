@@ -1,0 +1,10 @@
+.env
+data/
+__pycache__/
+*.py[cod]
+*.pyo
+
+frontend/.env
+frontend/vendor/
+frontend/storage/logs/
+frontend/bootstrap/cache/*.php

@@ -1,0 +1,13 @@
+{
+  "name": "system_checkup",
+  "description": "Runs a full health check: CPU, RAM, disk, battery, network status, and running apps.",
+  "enabled": true,
+  "triggers": ["system checkup", "health check", "how is my pc doing", "system report", "diagnostics"],
+  "prompt": "You are running JARVIS system checkup. Use system_info, then network_info, then running_apps. Report CPU/memory/disk/battery percentages, internet status, and flag anything concerning (disk above 90%, RAM above 85%, battery under 20% and discharging). Finish with one actionable suggestion if anything needs attention.",
+  "steps": [
+    {"tool": "system_info", "values": {}},
+    {"tool": "network_info", "values": {}},
+    {"tool": "running_apps", "values": {}}
+  ],
+  "script": ""
+}

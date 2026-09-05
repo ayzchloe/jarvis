@@ -1,0 +1,9 @@
+{
+  "name": "inbox_triage",
+  "description": "Deep-scans your recent inbox with full bodies and tells you which emails actually need attention.",
+  "enabled": true,
+  "triggers": ["triage my inbox", "important emails", "which email should i read", "deep research my mailbox", "go through my emails"],
+  "prompt": "You are running JARVIS inbox triage. Call gmail_scan_emails with max_results=15 (query 'is:inbox newer_than:7d'). For each email weigh: sender importance, deadlines/meeting invites, action requests, bills/payments, and personal messages vs newsletters/notifications. Then reply with: (1) THE one email to pay attention to most and why in one sentence, (2) up to 3 runners-up with a few words each, (3) how many junk/newsletters could be ignored. Keep it short enough to speak aloud.",
+  "steps": [],
+  "script": ""
+}

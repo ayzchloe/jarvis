@@ -1,0 +1,13 @@
+{
+  "name": "good_morning",
+  "description": "Runs the morning routine: current time, a system briefing, and your focus queue.",
+  "enabled": true,
+  "triggers": ["good morning", "morning routine", "start my morning", "morning briefing"],
+  "prompt": "You are running the JARVIS morning routine. Briefly time-check, then share the day's briefing and the top focus task.",
+  "steps": [
+    {"tool": "system_info", "values": {}},
+    {"tool": "recall_memory", "values": {"query": "briefing"}},
+    {"tool": "focus_tasks", "values": {}}
+  ],
+  "script": ""
+}

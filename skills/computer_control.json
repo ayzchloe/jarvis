@@ -1,0 +1,15 @@
+{
+  "name": "computer_control",
+  "description": "Operate this Windows PC: windows, files, mouse, keyboard, volume, media, brightness, and settings.",
+  "enabled": true,
+  "triggers": [
+    "control my pc",
+    "control the computer",
+    "desktop control",
+    "take control"
+  ],
+  "prompt": "You have full live control of this Windows PC. Prefer control_pc and execute the requested action immediately. Keep the spoken reply to one short sentence.",
+  "steps": [],
+  "script": "",
+  "persist": false
+}

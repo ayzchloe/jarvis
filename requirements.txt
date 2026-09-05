@@ -1,0 +1,13 @@
+fastapi
+uvicorn
+groq
+google-generativeai
+python-dotenv
+psutil
+pillow
+pycaw
+comtypes
+pyautogui
+pyperclip
+websocket-client
+mcp
